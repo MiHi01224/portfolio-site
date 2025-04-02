@@ -9,26 +9,89 @@
 </head>
 <body>
     <header class="header">
-        <a href="#" class="header__logo">
-            <p class="header__image">MIHI</p>
-        </a>
-        <nav class="header__nav nav">
-            <ul class="nav__list">
-                <li class="nav__item"><a href="#">HOME</a></li>
-                <li class="nav__item"><a href="#">WORKS</a></li>
-                <li class="nav__item"><a href="#">ABOUT</a></li>
-                <li class="nav__item"><a href="#">CONTACT</a></li>
-            </ul>
-        </nav>
+        <div class="header__inner">
+            <a href="#" class="header__logo">
+                <h1 class="header__image">MIHI</h1>
+            </a>
+            <nav class="header__nav nav">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#">HOME</a></li>
+                    <li class="nav__item"><a href="#">WORKS</a></li>
+                    <li class="nav__item"><a href="#">ABOUT</a></li>
+                    <li class="nav__item"><a href="#">CONTACT</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
     <main class="main">
-        <div class="top"></div>
+        <section class="top">
+            <div class="top__inner">
+                <div class="top__slider">
+                    <div class="top__slideing"></div>
+                    <div class="top__slideing"></div>
+                    <div class="top__slideing"></div>
+                    <div class="top__slideing"></div>
+                    <div class="top__content content"><h2>Portfolio site</h2></div>
+                    <div class="top__content content"><img src="" alt=""></div>
+                    <div class="top__content content"><img src="" alt=""></div>
+                </div>
+            </div>
+        </section>
 
+        <section class="works">
+            <div class="works__inner">
+                <h2 class="work___title">Work</h2>
+                <div class="work__content">
+                    <div class="work__item card">
+                        <p class="work__number">01</p>
+                        <img class="work__pic" src="./image/inu.png" alt="">
+                        <p class="work__text">タイトル</p>
+                    </div>
+                    <div class="work__item card">
+                        <p class="work__number">01</p>
+                        <img class="work__pic" src="./image/inu.png" alt="">
+                        <p class="work__text">タイトル</p>
+                    </div>
+                    <div class="work__item card">
+                        <p class="work__number">01</p>
+                        <img class="work__pic" src="./image/inu.png" alt="">
+                        <p class="work__text">タイトル</p>
+                    </div>
+                    <div class="work__item card">
+                        <p class="work__number">01</p>
+                        <img class="work__pic" src="./image/inu.png" alt="">
+                        <p class="work__text">タイトル</p>
+                    </div>
+                </div>
+                <a class="button" href="#">View more</a>
+            </div>
+        </section>
+
+        <section class="about">
+            <div class="about__inner">
+                <h2 class="about___title">About</h2>
+                <div class="about___content unit">
+                    <img class="unit__pic" src="./image/inu.png" alt="">
+                    <div class="unit__info">
+                        <p class="unit__text">サンプルサンプルサンプルサンプル</p>
+                        <a class="button" href="#">View more</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact">
+            <div class="contact__ineer">
+                <h2 class="contact___title">Contact</h2>
+                <p class="contact__text">サンプルサンプルサンプルサンプル</p>
+                <a class="button" href="#">View more</a>
+            </div>
+        </section>
     </main>
 
     <footer class="footer">
-
+        <small class="footer__copy">&copy;MIHIRO KAWAGUCHI</small>
     </footer>
 
 </body>
