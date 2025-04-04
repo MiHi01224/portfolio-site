@@ -46,8 +46,7 @@ body {
     min-width: 280px;
     color: $color-text;
     font-size: f-rem(18);
-    font-family: "Noto Sans", sans-serif, "ヒラギノ丸ゴ ProN",
-        "Hiragino Maru Gothic ProN";
+    font-family: "Noto Sans", sans-serif, "ヒラギノ丸ゴ ProN","Hiragino Maru Gothic ProN";
     line-height: (28/18);
     letter-spacing: 0;
 
@@ -63,7 +62,7 @@ body {
         top: 0;
         left: 0;
         width: 100%;
-        padding: 60px 0;
+        padding: 35px 0;
         background-color: rgba(255,255,255,0.2);
         backdrop-filter: saturate(180%) blur(2px);
 
@@ -72,9 +71,38 @@ body {
             @include m-flex();
         }
 
+        &__pic{
+            width: 120px;
+
+            .m-color{
+                fill: #00f2ff;
+            }
+            .i-color,.i2-color{
+                fill: #5454fd;
+            }
+            .h-color{
+                fill: #616678;
+            }
+
+            @include m-query(){
+                width: 150px;
+            }
+        }
+
+        &__menu{
+            display: block;
+            width: 48px;
+            height: 100%;
+
+            @include m-query() {
+                display: none;
+            }
+        }
+
     }
 
 .nav{
+    display: none;
     &__list{
         @include m-flex();
     }
@@ -83,7 +111,55 @@ body {
         padding-left: 15px;
         font-weight: bold;
     }
+
+    @include m-query(){
+        display: block;
+    }
 }
+
+/* ハンバーガーメニュー */
+.menu{
+    cursor: pointer;
+    width: 50px;
+    height: 40px;
+    z-index: 300;
+
+    &__line{
+        position: absolute;
+        right:10%;
+        width: 45px;
+        height:2px;
+        background-color: $color-text;
+        transition: all 0.5s;
+    }
+
+    :nth-child(1){
+        top:48px;
+    }
+    :nth-child(2){
+        top:63px;
+    }
+    :nth-child(3){
+        top:78px;
+    }
+}
+
+/* card */
+.card{
+
+    &__pic{
+
+    }
+
+    &__text{
+
+    }
+
+    &__number{
+
+    }
+}
+
 
 /* index
 ----------------------------------*/
@@ -157,13 +233,14 @@ body {
         position: relative;
         &__text{
             position: absolute;
-            top:30%;
-            left: -50px;
+            top:20%;
+            left: -40px;
+            color: #000;
             font-weight: bold;
             font-size: f-rem(30);
 
             @include m-query(){
-                left: -100px;
+                left: -140px;
                 font-size: f-rem(60);
             }
 

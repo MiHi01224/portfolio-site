@@ -23,14 +23,14 @@ body ::selection {
   top: 0;
   left: 0;
   width: 100%;
-  padding: 60px 0;
+  padding: 35px 0;
   background-color: rgba(255, 255, 255, 0.2);
   -webkit-backdrop-filter: saturate(180%) blur(2px);
           backdrop-filter: saturate(180%) blur(2px);
 }
 .header__inner {
   width: 80.46875%;
-  max-width: 1236px;
+  max-width: 87.5%;
   margin-left: auto;
   margin-right: auto;
   display: flex;
@@ -38,7 +38,37 @@ body ::selection {
   justify-content: space-between;
   align-items: center;
 }
+.header__pic {
+  width: 120px;
+}
+.header__pic .m-color {
+  fill: #00f2ff;
+}
+.header__pic .i-color, .header__pic .i2-color {
+  fill: #5454fd;
+}
+.header__pic .h-color {
+  fill: #616678;
+}
+@media screen and (min-width: 850px) {
+  .header__pic {
+    width: 150px;
+  }
+}
+.header__menu {
+  display: block;
+  width: 48px;
+  height: 100%;
+}
+@media screen and (min-width: 850px) {
+  .header__menu {
+    display: none;
+  }
+}
 
+.nav {
+  display: none;
+}
 .nav__list {
   display: flex;
   flex-wrap: wrap;
@@ -49,7 +79,38 @@ body ::selection {
   padding-left: 15px;
   font-weight: bold;
 }
+@media screen and (min-width: 850px) {
+  .nav {
+    display: block;
+  }
+}
 
+/* ハンバーガーメニュー */
+.menu {
+  cursor: pointer;
+  width: 50px;
+  height: 40px;
+  z-index: 300;
+}
+.menu__line {
+  position: absolute;
+  right: 10%;
+  width: 45px;
+  height: 2px;
+  background-color: #444;
+  transition: all 0.5s;
+}
+.menu :nth-child(1) {
+  top: 48px;
+}
+.menu :nth-child(2) {
+  top: 63px;
+}
+.menu :nth-child(3) {
+  top: 78px;
+}
+
+/* card */
 /* index
 ----------------------------------*/
 /* top */
@@ -120,14 +181,15 @@ body ::selection {
 }
 .top__content__text {
   position: absolute;
-  top: 30%;
-  left: -50px;
+  top: 20%;
+  left: -40px;
+  color: #000;
   font-weight: bold;
   font-size: 1.875rem;
 }
 @media screen and (min-width: 850px) {
   .top__content__text {
-    left: -100px;
+    left: -140px;
     font-size: 3.75rem;
   }
 }
@@ -135,7 +197,7 @@ body ::selection {
 /* works */
 .works__inner {
   width: 80.46875%;
-  max-width: 1236px;
+  max-width: 87.5%;
   margin-left: auto;
   margin-right: auto;
 }
