@@ -14,7 +14,7 @@ $breakpoints: (
     }
 }
 
-@mixin m-inner($w: (1236/1536)*100%, $mw: 1236px) {
+@mixin m-inner($w: (1236/1536)*100%, $mw: 87.5%) {
     width: $w;
     max-width: $mw;
     margin-left: auto;
