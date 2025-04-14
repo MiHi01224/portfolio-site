@@ -3,16 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name=”description“ content=“MIHIのポートフォリオサイト“ />
+
+    <!-- ファビコン -->
+    <link rel=”icon” href="./image/favicon.ico">
+
+    <!-- グーグルフォント -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+
+    <!-- css js -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/the-new-css-reset/css/reset.min.css">
     <link rel="stylesheet" href="./css/style.css">
-    <title>ポートフォリオサイト</title>
+    <title>
+        MIHIRO KAWAGUCHI PORTFOLIO SITE
+    </title>
 </head>
 <body>
     <header class="header">
         <div class="header__inner">
-            <a href="#" class="header__logo">
-                <h1 class="header__pic">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 245.59 109.02">
+            <a href="./index.html" class="header__logo" aria-label="logo">
+                <h1 class="header__pic" id="js-color">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 245.59 109.02" >
                     <g>
                         <path class="i2-color"
                             d="M195.78,34.24c-.31-.02-.62-.07-.92-.07-3.56,0-7.12-.02-10.68,0-.65,0-.88-.19-.84-.84.05-.72.01-1.44.01-2.29-.84,0-1.61-.03-2.38,0-.59.03-.78-.2-.75-.77.04-.75,0-1.49,0-2.36-.85,0-1.62-.02-2.39,0-.52.02-.75-.14-.74-.7.02-2.6.02-5.2,0-7.79,0-.53.16-.76.71-.73.77.03,1.54,0,2.42,0,0-1.75,0-3.4,0-5.05q0-1.18,1.18-1.18c.6,0,1.19,0,1.94,0,0-.8.03-1.57-.01-2.34-.04-.63.21-.83.81-.79.72.04,1.45,0,2.32,0v-1.49q0-1.63,1.67-1.63h4.57c0-.77.04-1.49-.01-2.2-.05-.71.17-.94.91-.94,3.51.04,7.02.02,10.52.02.31,0,.62,0,1.05,0,0-.83.03-1.6,0-2.36-.03-.58.18-.77.76-.76,5.69.02,11.38.02,17.07,0,.58,0,.79.19.76.77-.04.75,0,1.5,0,2.32.35.02.62.04.9.04,2.52,0,5.04.03,7.56-.02.74-.01.96.23.91.94-.05.69-.01,1.39-.01,2.2.77,0,1.47.04,2.15-.01.73-.06,1.05.16.98.94-.06.69-.01,1.39-.01,2.19.86,0,1.63.02,2.4,0,.54-.02.75.17.73.72-.03.77,0,1.54,0,2.41.89,0,1.69.02,2.49,0,.47-.01.65.18.64.65-.02.78,0,1.55,0,2.48.76,0,1.48.05,2.19-.01.78-.07.95.24.95.98-.03,4.49-.01,8.99-.02,13.48q0,1-1.05,1c-.65,0-1.29,0-2.07,0,0,.82-.03,1.59,0,2.36.03.57-.17.77-.75.77-3.61-.02-7.22-.02-10.84,0-.58,0-.79-.18-.76-.76.04-.75,0-1.5,0-2.3h-34.37c0,1.06,0,2.1,0,3.15,0,0,.02-.02.02-.02ZM192.61,28.03h9.4v-3.16h-9.4v3.16ZM211.32,28.03h9.4v-3.16h-9.4v3.16Z" />
@@ -34,12 +47,12 @@
                 </svg>
                 </h1>
             </a>
-            <nav class="header__nav nav">
+            <nav class="header__nav nav" id="js-nav">
                 <ul class="nav__list">
-                    <li class="nav__item"><a href="#">HOME</a></li>
-                    <li class="nav__item"><a href="#">WORKS</a></li>
-                    <li class="nav__item"><a href="#">ABOUT</a></li>
-                    <li class="nav__item"><a href="#">CONTACT</a></li>
+                    <li class="nav__item"><a href="#home">HOME</a></li>
+                    <li class="nav__item"><a href="#works">WORKS</a></li>
+                    <li class="nav__item"><a href="#about">ABOUT</a></li>
+                    <li class="nav__item"><a href="#contact">CONTACT</a></li>
                 </ul>
             </nav>
             <div class="header__menu menu" id="js-menu">
@@ -47,78 +60,107 @@
                 <span class="menu__line"></span>
                 <span class="menu__line"></span>
             </div>
+            <div class="header__bg" id="js-bg"></div>
         </div>
     </header>
 
     <main class="main">
-        <section class="top">
+        <section class="top anchor" id="home">
             <div class="top__inner">
                 <div class="top__slider">
                     <div class="top__slideing"></div>
                     <div class="top__slideing"></div>
                     <div class="top__slideing"></div>
                     <div class="top__slideing"></div>
-                    <div class="top__content__text"><h2>MIHIRO KAWAGUCHI<br>Portfolio site</h2></div>
+                    <h2 class="top__content__text top__content__typing" id="js-typing"></h2>
                     <div class="top__content__obake"><img src="" alt=""></div>
                     <div class="top__content__obake2"><img src="" alt=""></div>
                 </div>
             </div>
         </section>
 
-        <section class="works">
+        <section class="works anchor" id="works">
             <div class="works__inner">
-                <h2 class="work___title">Work</h2>
-                <div class="work__content">
-                    <div class="work__item card">
-                        <p class="work__number">01</p>
-                        <img class="work__pic" src="./image/inu.png" alt="">
-                        <p class="work__text">タイトル</p>
+                <h2 class="works__title">WORKS</h2>
+                <div class="works__content">
+                    <div class="works__item card">
+                        <a href="bace.html">
+                        <p class="card__number" id="js-color">01</p>
+                        <div class="card__frame">
+                            <img class="card__pic" src="./image/single/01.png" alt="">
+                        </div>
+                        <p class="card__title">bl.g</p>
+                        <p class="card__text">ブログサイト</p>
+                        </a>
                     </div>
-                    <div class="work__item card">
-                        <p class="work__number">01</p>
-                        <img class="work__pic" src="./image/inu.png" alt="">
-                        <p class="work__text">タイトル</p>
+                    <div class="works__item card">
+                        <a href="bace.html">
+                        <p class="card__number" id="js-color">02</p>
+                        <div class="card__frame">
+                            <img class="card__pic" src="./image/single/02.png" alt="">
+                        </div>
+                        <p class="card__title">F81看板</p>
+                        <p class="card__text">トライデントコンピューターF81看板</p>
+                        </a>
                     </div>
-                    <div class="work__item card">
-                        <p class="work__number">01</p>
-                        <img class="work__pic" src="./image/inu.png" alt="">
-                        <p class="work__text">タイトル</p>
+                    <div class="works__item card">
+                        <a href="bace.html">
+                        <p class="card__number" id="js-color">03</p>
+                        <div class="card__frame">
+                            <img class="card__pic" src="./image/single/03.png" alt="">
+                        </div>
+                        <p class="card__title">Re:scene</p>
+                        <p class="card__text">メモアプリ/UIデザイン</p>
+                        </a>
                     </div>
-                    <div class="work__item card">
-                        <p class="work__number">01</p>
-                        <img class="work__pic" src="./image/inu.png" alt="">
-                        <p class="work__text">タイトル</p>
+                    <div class="works__item card">
+                        <a href="bace.html">
+                        <p class="card__number" id="js-color">04</p>
+                        <div class="card__frame">
+                            <img class="card__pic" src="./image/single/04.png" alt="">
+                        </div>
+                        <p class="card__title">自分の名刺</p>
+                        <p class="card__text">名刺</p>
+                        </a>
                     </div>
+                    <a class="btn" href="#">VIEW MORE</a>
                 </div>
-                <a class="btn" href="#">View more</a>
             </div>
         </section>
 
-        <section class="about">
+        <section class="about anchor" id="about">
             <div class="about__inner">
-                <h2 class="about___title">About</h2>
-                <div class="about___content unit">
-                    <img class="unit__pic" src="./image/inu.png" alt="">
+                <h2 class="about__title">ABOUT</h2>
+                <div class="about__content unit">
+                    <img class="unit__pic" src="./image/about.jpg" alt="">
                     <div class="unit__info">
-                        <p class="unit__text">サンプルサンプルサンプルサンプル</p>
-                        <a class="btn" href="#">View more</a>
+                        <p class="unit__text">
+                            初めまして。川口みひろと申します。<br><br>
+                            当ポートフォリオサイトをご訪問いただきありがとうございます。<br><br>
+                            イラストを描くこととドット絵が大好きで、楽しくデザインを勉強中です！</p>
+                        <a class="btn" href="#">VIEW MORE</a>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="contact">
-            <div class="contact__ineer">
-                <h2 class="contact___title">Contact</h2>
-                <p class="contact__text">サンプルサンプルサンプルサンプル</p>
-                <a class="btn" href="#">View more</a>
+        <section class="contact anchor" id="contact">
+            <div class="contact__inner">
+                <h2 class="contact__title">CONTACT</h2>
+                <p class="contact__text">kawaguchi.mihiro0810@gmail.com</p>
+                <p class="contact__text">までご連絡ください。
+                </p>
             </div>
         </section>
     </main>
 
     <footer class="footer">
-        <small class="footer__copy">&copy;MIHIRO KAWAGUCHI</small>
+        <div class="footer__inner">
+            <small class="footer__copy">&copy;MIHIRO KAWAGUCHI</small>
+            <div class="pagetop"><img class="pagetop__pic" src="./image/top.png" alt="top"></div>
+        </div>
     </footer>
 
+    <script src="./bace.js"></script>
 </body>
 </html>
