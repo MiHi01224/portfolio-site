@@ -43,7 +43,7 @@ html {
 
 body {
   min-width: 280px;
-  color: #3f2d81;
+  color: #444;
   font-size: 1.125rem;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   line-height: 1.5555555556;
@@ -51,10 +51,10 @@ body {
   /* 文字選択色 */
 }
 body ::-moz-selection {
-  background-color: #c6a0ff;
+  background-color: #ddd;
 }
 body ::selection {
-  background-color: #c6a0ff;
+  background-color: #ddd;
 }
 
 .header {
@@ -87,13 +87,13 @@ body ::selection {
   width: 120px;
 }
 .header__pic .m-color {
-  fill: #3f2d81;
+  fill: #444;
 }
 .header__pic .i-color, .header__pic .i2-color {
-  fill: #7839ff;
+  fill: #797979;
 }
 .header__pic .h-color {
-  fill: #c6a0ff;
+  fill: #ddd;
 }
 @media screen and (min-width: 850px) {
   .header__pic {
@@ -138,7 +138,7 @@ body ::selection {
   }
 }
 .nav__item:hover {
-  color: #7839ff;
+  color: #797979;
   transform: translateY(-2px);
 }
 @media screen and (min-width: 850px) {
@@ -195,7 +195,7 @@ body ::selection {
   right: 10%;
   width: 45px;
   height: 2px;
-  background-color: #3f2d81;
+  background-color: #444;
   transition: all 0.5s, width 0.3s;
 }
 .menu__line:nth-child(1) {
@@ -258,15 +258,14 @@ body ::selection {
 
 /* footer */
 .footer {
-  background-image: url(../image/background.png);
   background-repeat: repeat;
   background-size: 790px;
   -webkit-animation: s-scrollBackground 20s linear infinite;
           animation: s-scrollBackground 20s linear infinite;
   background-image: url(../image/background4.png);
-  background-color: #19181b;
+  background-color: #1e1e1e;
   color: #fff;
-  padding: 300px 0 30px;
+  padding: 60px 0;
 }
 @media screen and (min-width: 850px) {
   .footer {
@@ -279,6 +278,19 @@ body ::selection {
   max-width: 87.5%;
   margin-left: auto;
   margin-right: auto;
+}
+.footer .contact {
+  color: #fff;
+  padding: 0 0 300px;
+}
+.footer .contact__title {
+  font-size: 2.5rem;
+  font-family: "Press Start 2P", system-ui;
+}
+@media screen and (min-width: 850px) {
+  .footer .contact__title {
+    font-size: 5rem;
+  }
 }
 
 .pagetop {
@@ -301,7 +313,7 @@ body ::selection {
   transition: all 0.3s;
 }
 .pagetop:hover {
-  box-shadow: 0 0 10px #7839ff;
+  box-shadow: 0 0 10px #797979;
 }
 .pagetop:hover .pagetop__pic {
   transform: scale(1.5);
@@ -335,11 +347,11 @@ body ::selection {
   margin-top: 5px;
   font-size: 1.5625rem;
   font-weight: bold;
-  color: #19181b;
+  color: #1e1e1e;
   transition: all 0.5s;
 }
 .card__text {
-  color: #3f2d81;
+  color: #444;
   transition: all 0.5s;
 }
 .card__number {
@@ -359,11 +371,11 @@ body ::selection {
   }
 }
 .card:hover .card__pic {
-  filter: grayscale(79%);
+  filter: saturate(1.5);
   transform: scale(1.1);
 }
 .card:hover .card__number, .card:hover .card__title, .card:hover .card__text {
-  color: #7839ff;
+  color: #797979;
 }
 
 /* unit */
@@ -389,7 +401,14 @@ body ::selection {
 .unit__text {
   font-size: 1.125rem;
   margin-top: 30px;
-  color: #fff;
+  color: #444;
+}
+.unit__title {
+  margin-top: 5px;
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #1e1e1e;
+  font-family: "Press Start 2P", system-ui;
 }
 @media screen and (min-width: 850px) {
   .unit__pic {
@@ -429,13 +448,13 @@ body ::selection {
   margin-top: 30px;
   padding: 15px 30px;
   color: #fff;
-  background-color: #19181b;
+  background-color: #1e1e1e;
   font-family: "Press Start 2P", system-ui;
   border-radius: 5;
   transition: all 0.5s;
 }
 .btn:hover {
-  background-color: #7839ff;
+  background-color: #797979;
   transform: translateX(5px);
 }
 
@@ -516,7 +535,7 @@ body ::selection {
   position: absolute;
   top: 20%;
   left: -40px;
-  color: #19181b;
+  color: #1e1e1e;
   font-family: "Press Start 2P", system-ui;
   font-size: 1.25rem;
 }
@@ -528,7 +547,7 @@ body ::selection {
 }
 .top__content__typing::after {
   content: "";
-  border-right: 10px solid #19181b;
+  border-right: 10px solid #1e1e1e;
   margin-left: 4epx;
   padding: 2px 0;
   -webkit-animation: flashing 1s linear infinite;
@@ -571,19 +590,8 @@ body ::selection {
 }
 /* works */
 .works {
-  background-color: #c6a0ff;
-  background-image: url(../image/background.png);
-  background-repeat: repeat;
-  background-size: 790px;
-  -webkit-animation: s-scrollBackground 20s linear infinite;
-          animation: s-scrollBackground 20s linear infinite;
-  padding: 60px 0;
-}
-@media screen and (min-width: 850px) {
-  .works {
-    -webkit-animation: scrollBackground 20s linear infinite;
-            animation: scrollBackground 20s linear infinite;
-  }
+  background-color: #ddd;
+  padding: 120px 0 0;
 }
 .works__inner {
   width: 80.46875%;
@@ -617,21 +625,9 @@ body ::selection {
 
 /* about */
 .about {
-  background-image: url(../image/background.png);
-  background-repeat: repeat;
-  background-size: 790px;
-  -webkit-animation: s-scrollBackground 20s linear infinite;
-          animation: s-scrollBackground 20s linear infinite;
-  background-color: #7839ff;
-  background-image: url(../image/background2.png);
-  color: #fff;
-  padding: 60px 0;
-}
-@media screen and (min-width: 850px) {
-  .about {
-    -webkit-animation: scrollBackground 20s linear infinite;
-            animation: scrollBackground 20s linear infinite;
-  }
+  background-color: #ddd;
+  color: #444;
+  padding: 120px 0 60px;
 }
 .about__inner {
   width: 80.46875%;
@@ -645,39 +641,6 @@ body ::selection {
 }
 @media screen and (min-width: 850px) {
   .about__title {
-    font-size: 5rem;
-  }
-}
-
-.contact {
-  background-image: url(../image/background.png);
-  background-repeat: repeat;
-  background-size: 790px;
-  -webkit-animation: s-scrollBackground 20s linear infinite;
-          animation: s-scrollBackground 20s linear infinite;
-  background-color: #3f2d81;
-  background-image: url(../image/background3.png);
-  color: #fff;
-  padding: 60px 0;
-}
-@media screen and (min-width: 850px) {
-  .contact {
-    -webkit-animation: scrollBackground 20s linear infinite;
-            animation: scrollBackground 20s linear infinite;
-  }
-}
-.contact__inner {
-  width: 80.46875%;
-  max-width: 87.5%;
-  margin-left: auto;
-  margin-right: auto;
-}
-.contact__title {
-  font-size: 2.5rem;
-  font-family: "Press Start 2P", system-ui;
-}
-@media screen and (min-width: 850px) {
-  .contact__title {
     font-size: 5rem;
   }
 }
@@ -745,11 +708,36 @@ body ::selection {
   margin-top: 5px;
   font-size: 1.5625rem;
   font-weight: bold;
-  color: #19181b;
+  color: #1e1e1e;
   transition: all 0.5s;
 }
 .ccard__text {
-  color: #3f2d81;
+  color: #444;
   transition: all 0.5s;
+}
+
+.comment {
+  padding: 120px 0 60px;
+  background-color: #ddd;
+}
+.comment__inner {
+  width: 80.46875%;
+  max-width: 87.5%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.comment__title {
+  font-size: 2.5rem;
+  font-family: "Press Start 2P", system-ui;
+}
+@media screen and (min-width: 850px) {
+  .comment__title {
+    font-size: 5rem;
+  }
+}
+.comment__text {
+  margin-top: 30px;
+  font-size: 1.25rem;
+  color: #444;
 }
 /*# sourceMappingURL=style.css.map */

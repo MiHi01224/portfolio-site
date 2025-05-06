@@ -1,14 +1,14 @@
 @charset "utf-8";
 
-// $color-black: #1e1e1e;
-// $color-text: #444;
-// $color-main: #797979;
-// $color-accent: #ddd;
+$color-black: #1e1e1e;
+$color-text: #444;
+$color-main: #797979;
+$color-accent: #ddd;
 
-$color-black: #19181b;
-$color-text: #3f2d81;
-$color-main: #7839ff;
-$color-accent: #c6a0ff;
+// $color-black: #19181b;
+// $color-text: #3f2d81;
+// $color-main: #7839ff;
+// $color-accent: #c6a0ff;
 
 $breakpoints: (
     "desktop": "screen and (min-width: 850px)",
@@ -44,7 +44,6 @@ $breakpoints: (
 }
 
 @mixin m_background(){
-    background-image: url(../image/background.png);
     background-repeat: repeat;
     background-size: 790px;
     animation: s-scrollBackground 20s linear infinite;
@@ -315,10 +314,20 @@ body {
     background-image: url(../image/background4.png);
     background-color:$color-black;
     color: #fff;
-    padding:300px 0 30px;
+    padding:60px 0;
     &__inner{
         @include m-inner();
     }
+
+    .contact {
+    color: #fff;
+    padding: 0 0 300px;
+
+
+    &__title {
+        @include m-title();
+    }
+}
 }
 
 .pagetop{
@@ -404,7 +413,7 @@ body {
 
     &:hover {
         .card__pic {
-            filter: grayscale(79%);
+            filter:saturate(1.5);
             transform: scale(1.1);
         }
         .card__number,.card__title,.card__text{
@@ -428,7 +437,15 @@ body {
     &__text {
         font-size: f-rem(18);
         margin-top: 30px;
-        color: #fff;
+        color: $color-text;
+    }
+
+    &__title {
+        margin-top: 5px;
+        font-size: f-rem(40);
+        font-weight: bold;
+        color: $color-black;
+        font-family: "Press Start 2P", system-ui;
     }
 
     @include m-query(){
@@ -480,7 +497,6 @@ body {
         transform: translateX(5px);
     }
 }
-
 /* index
 ----------------------------------*/
 //   ####    ##   ##  #####    #######  ##  ##
@@ -606,8 +622,7 @@ body {
 /* works */
 .works {
     background-color: $color-accent;
-    @include m-background();
-    padding:60px 0;
+    padding:120px 0 0;
     &__inner {
         @include m-inner();
     }
@@ -631,11 +646,9 @@ body {
 
 /* about */
 .about {
-    @include m-background();
-    background-color: $color-main;
-    background-image: url(../image/background2.png);
-    color: #fff;
-    padding: 60px 0;
+    background-color: $color-accent;
+    color: $color-text;
+    padding: 120px 0 60px;
 
     &__inner {
         @include m-inner();
@@ -646,21 +659,7 @@ body {
     }
 }
 
-.contact {
-    @include m-background();
-    background-color:$color-text;
-    background-image: url(../image/background3.png);
-    color: #fff;
-    padding: 60px 0;
 
-    &__inner {
-        @include m-inner();
-    }
-
-    &__title {
-        @include m-title();
-    }
-}
 
 /* home */
 .home{
@@ -718,5 +717,25 @@ body {
     &__text {
         color: $color-text;
         transition: all 0.5s;
+    }
+}
+
+
+//about
+
+.comment{
+    padding: 120px 0 60px;
+    background-color: $color-accent;
+
+    &__inner{
+        @include m-inner();
+    }
+    &__title{
+        @include m-title();
+    }
+    &__text{
+        margin-top: 30px;
+        font-size: f-rem(20);
+        color: $color-text;
     }
 }
