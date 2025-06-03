@@ -1,14 +1,15 @@
 @charset "utf-8";
 
-$color-black: #1e1e1e;
-$color-text: #444;
-$color-main: #797979;
-$color-accent: #ddd;
+// $color-black: #1e1e1e;
+// $color-text: #444;
+// $color-main: #797979;
+// $color-accent: #ddd;
 
-// $color-black: #19181b;
-// $color-text: #3f2d81;
-// $color-main: #7839ff;
-// $color-accent: #c6a0ff;
+$color-black: #19181b;
+$color-text: #463359;
+$color-main: #7839ff;
+$color-accent: #d5c4ed;
+$color-back: #efe9f4;
 
 $breakpoints: (
     "desktop": "screen and (min-width: 850px)",
@@ -97,9 +98,10 @@ html{
 body {
     min-width: 280px;
     color: $color-text;
-    font-size: f-rem(18);
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    line-height: (28/18);
+    background-color: $color-back;
+    font-size: f-rem(17);
+    font-family:Helvetica, sans-serif,Arial;
+    line-height: (28/17);
     letter-spacing: 0;
 
     /* 文字選択色 */
@@ -199,7 +201,7 @@ body {
         align-items: center;
         right: 0;
         width: 40%;
-        background-color: #fff;
+        background-color: $color-back;
 
         @include m-query() {
             display: block;
@@ -342,7 +344,7 @@ body {
     height: 60px;
     border-radius: 50%;
     transition:all 0.3s;
-    background: #fff;
+    background: $color-back;
     z-index: 600;
     opacity: 0;
 
@@ -435,7 +437,7 @@ body {
         @include m-flex();
     }
     &__text {
-        font-size: f-rem(18);
+        font-size: f-rem(17);
         margin-top: 30px;
         color: $color-text;
     }
@@ -458,7 +460,7 @@ body {
             width: (600/1236)*100%;
         }
         &__text{
-            font-size: f-rem(18);
+            font-size: f-rem(17);
         }
     }
 }
@@ -707,7 +709,7 @@ body {
 
 
     &__title {
-        margin-top: 5px;
+        margin-top: 30px;
         font-size: f-rem(25);
         font-weight: bold;
         color: $color-black;
@@ -715,8 +717,13 @@ body {
     }
 
     &__text {
+        margin-top: 10px;
         color: $color-text;
         transition: all 0.5s;
+    }
+
+    &__pic{
+        margin-top: 30px;
     }
 }
 
