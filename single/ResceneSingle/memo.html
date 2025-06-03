@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>感想</title>
+    <link rel="stylesheet" href="destyle.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
+    <style>
+        .content {
+            display: none;
+            background: url(images/memo__line.png);
+            background-position: center;
+            background-repeat: repeat-y;
+            padding-top: 10px;
+        }
+
+        main {
+            height: calc(100vh - 50px);
+            width: 390px;
+            background-image: url(images/background__blue.png);
+            background-repeat: repeat;
+            background-size: 150px;
+            position: relative;
+        }
+
+
+
+        #content1 {
+
+            /* background-color: blue; */
+            li {
+                width: 294px;
+                padding-left: 30px;
+                padding-top: 30px;
+            }
+
+            .memo {
+                height: 185px;
+            }
+
+            .expression {
+                height: 228px;
+                padding-top: 80px;
+            }
+
+            .dialogue {
+                height: 213px;
+            }
+
+            .scene {
+                height: 188px;
+            }
+
+            .background {
+                height: 210px;
+            }
+
+        }
+
+        #content2 {
+            /* background-color: red; */
+            li {
+                width: 294px;
+                padding-left: 30px;
+                padding-top: 30px;
+            }
+
+            .memo {
+                height: 185px;
+            }
+
+            .expression {
+                height: 228px;
+                padding-top: 80px;
+            }
+
+            .dialogue {
+                height: 213px;
+            }
+
+            .scene {
+                height: 188px;
+            }
+
+            .background {
+                height: 210px;
+            }
+
+        }
+
+        #content3 {
+            /* background-color: green; */
+            li {
+                width: 294px;
+                padding-left: 30px;
+                padding-top: 30px;
+            }
+
+            .memo {
+                height: 185px;
+            }
+
+            .expression {
+                height: 228px;
+                padding-top: 80px;
+            }
+
+            .dialogue {
+                height: 213px;
+            }
+
+            .scene {
+                height: 188px;
+            }
+
+            .background {
+                height: 210px;
+            }
+
+        }
+
+        .main_content {
+            text-align: center;
+        }
+
+        li {
+            list-style: none;
+            margin-top: 25px;
+        }
+
+        #allTextlist {
+            text-align: center;
+        }
+
+        .memo {
+            background: url("images/memo.png");
+            background-size: contain;
+            background-repeat: no-repeat;
+            display: flex;
+        }
+
+        .expression {
+            background: url("images/chara.png");
+            background-size: contain;
+            background-repeat: no-repeat;
+            display: flex;
+        }
+
+        .dialogue {
+            background: url("images/confirmed.png");
+            background-size: contain;
+            background-repeat: no-repeat;
+            display: flex;
+        }
+
+        .scene {
+            background: url("images/scene.png");
+            background-size: contain;
+            background-repeat: no-repeat;
+            display: flex;
+        }
+
+        .background {
+            background: url("images/serif.png");
+            background-size: contain;
+            background-repeat: no-repeat;
+            display: flex;
+        }
+
+        header {
+            background-color: #fff;
+            border-bottom: 2px solid #B1DDDE;
+        }
+
+
+        .btn_fixed {
+            position: absolute;
+            right: 20px;
+            top: 20px;
+        }
+
+        .coment_story {
+            width: 390px;
+            text-align: center;
+        }
+        
+        h3{
+            background-color: #fff;
+        }
+
+        footer{
+            position: fixed;
+            bottom: 0;
+            background: none;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="head_cont">
+            <a href="index.html">
+                <img src="images/左矢印.png">
+            </a>
+            <h2>感想・メモ</h2>
+        </div>
+    </header>
+    <div class="coment_story">
+        <div class="left_cont">
+            <img src="images/hero-main-sp.jpg">
+        </div>
+        <div class="right_cont">
+            <h2><span>名探偵コナン</span>
+                <br>百万ドルの五稜星
+            </h2>
+            <p>怪盗キッドとコナンが、函館を舞台に土方歳三ゆかりの日本刀を巡るバトルミステリー！
+                原作未公開の“秘密”が劇場版で明かされる—。</p>
+        </div>
+    </div>
+    <div class="btns_area">
+        <div class="btns">
+            <button onclick="ShowContent('content1')">1</button>
+            <button onclick="ShowContent('content2')">2</button>
+            <button onclick="ShowContent('content3')">3</button>
+            <button onclick="ShowContent('content4')">4</button>
+        </div>
+    </div>
+    <main>
+        <div class="main_content">
+            <div id="content1" class="content">
+                <h3>１回目</h3>
+                <ul id="allTextList" style="text-align: center;"></ul>
+            </div>
+            <div id="content2" class="content">
+                <h3>２回目</h3>
+                <ul style="text-align: center;">
+                    <li class="expression">[表情]<br> 和葉：汗ばんでいる、眉毛きりっ<br>蘭：目を見開いてびっくり</li>
+                    <li class="scene">[シーン殴り書き]<br>百人一首に集中し切っている和葉<br>紅茶に入れた砂糖の個数を<br>ノールックで当てる和葉に驚く蘭</li>
+                    <li class="dialogue">[台詞]<br> 和葉「砂糖二つじゃたりひん」<br>蘭「！」</li>
+                </ul>
+            </div>
+            <div id="content3" class="content">
+                <h3>３回目</h3>
+                <ul>
+                </ul>
+            </div>
+
+            <div id="content4" class="content">
+
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="btn_fixed">
+            <a href="form.html">
+                <img src="images/追従.png">
+            </a>
+        </div>
+
+    </footer>
+    <script>
+        function ShowContent(contentID) {
+            const contents = document.querySelectorAll('.content');
+            contents.forEach(content => {
+                content.style.display = 'none';
+            });
+
+            const contentToShow = document.getElementById(contentID);
+            if (contentToShow) {
+                contentToShow.style.display = 'block';
+            }
+        }
+        ShowContent('content1');
+
+        window.onload = function () {
+            let memo = sessionStorage.getItem('memo');
+            let chara = sessionStorage.getItem('chara')
+            let confirmed = sessionStorage.getItem('confirmed');
+
+            document.getElementById('memo').textContent = memo;
+            document.getElementById('chara').textContent = chara;
+            document.getElementById('confirmed').textContent = confirmed;
+        }
+        document.addEventListener("DOMContentLoaded", function () {
+            let savedTexts = JSON.parse(sessionStorage.getItem("userTexts")) || {
+                メモ: [], 表情: [], 台詞: [], シーン殴り書き: [], キャラの背景: []
+            };
+
+            // すべてのカテゴリーのテキストを1つの配列にまとめる
+            let allTexts = [];
+            for (const category in savedTexts) {
+                savedTexts[category].forEach(text => {
+                    allTexts.push({ category: category, text: text });
+                });
+            }
+
+            // 新しい順（逆順）に並べ替え
+            allTexts.reverse();
+
+            // テキストを表示
+            const listElement = document.getElementById("allTextList");
+            allTexts.forEach(item => {
+                const li = document.createElement("li");
+
+                // カテゴリーごとのクラス名を適用
+                let categoryClass = {
+                    "メモ": "memo",
+                    "表情": "expression",
+                    "台詞": "dialogue",
+                    "シーン殴り書き": "scene",
+                    "キャラの背景": "background"
+                }[item.category]
+
+                li.classList.add(categoryClass);
+                li.textContent = `[${item.category}] ${item.text}`;
+                listElement.appendChild(li);
+            });
+
+            // データがない場合のメッセージ
+            if (allTexts.length === 0) {
+                const li = document.createElement("li");
+                li.textContent = "データがありません";
+                listElement.appendChild(li);
+            }
+        });
+    </script>
+</body>
+
+
+</html>

@@ -1,0 +1,280 @@
+header {
+    width: 390px;
+    height: 55px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    background-color: #F4D077;
+    color: #6D4F55;
+    font-family: "Noto Sans JP", sans-serif;
+    line-height: 55px;
+
+}
+h2{
+    font-size: 18px;
+    font-family: "Noto Sans JP", sans-serif;
+}
+h3{
+    font-family: "Noto Sans JP", sans-serif;
+}
+
+
+.head_content input {
+    width: 285px;
+    height: 35px;
+    text-align: center;
+    border: solid 1px #000;
+    border-radius: 30px;
+}
+
+main {
+    width: 390px;
+    background-image: url(images/background__yellow.png);
+    background-repeat: repeat;
+    background-size: 150px;
+    position: relative;
+}
+.title {
+    padding: 30px 0 20px 0;
+}
+.top_content {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.content_item {
+    width: 150px;
+    height: 200px;
+    margin: 10px;
+    /* background-color: #d9d9d9; */
+}
+.btn {
+    text-align: right;
+}
+.btn button {
+    font-family: "Noto Sans JP", sans-serif;
+    font-size: 8px;
+    width: 100px;
+    height: 20px;
+    margin: 10px 10px 30px 0;
+    background-color: #fff;
+    padding: 10px -10px;
+    text-align: center;
+    border: 1px solid #000;
+    border-radius: 20px;
+}
+
+/* 感想ページ */
+.head_cont {
+    display: flex;
+    align-items: center;
+    margin-right: auto;
+    img{
+        margin-bottom: 8px;
+        margin-left: 25px;
+    }
+    h2{
+        margin-left: 10px;
+    }
+}
+.head_cont img {
+    /* width: 30px; */
+    height: 30px;
+}
+.coment_story {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    padding-top: 50px;
+}
+.left_cont {
+    width: 150px;
+    height: 200px;
+    /* margin: 0 20px; */
+}
+.left_cont img {
+    width: 150px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 15px;
+}
+.right_cont {
+    text-align: left;
+    margin-top: 5px;
+    width: 150px;
+}
+.right_cont span {
+    font-size: 16px;   
+}
+.right_cont p {
+    margin-top: 20px;
+    line-height: 1.3em;
+    font-size: 10px;
+    font-family: "Noto Sans JP", sans-serif;
+}
+.btns_area {
+    width: 390px;
+    margin-right:  auto;
+}
+.btns {
+    margin-top: 30px;
+    text-align: center;
+    border-bottom: 2px solid #6D4F55;
+}
+.btns button {
+    width: 45px;
+    height: 40px;
+    margin: 0 10px;
+    border-radius: 10px 10px 0 0;
+}
+.btns button:nth-child(1) {
+    background-color: #FBE9AC;
+    color: #6D4F55;
+}
+.btns button:nth-child(2) {
+    background-color: #D3DEA9;
+    color: #6D4F55;
+}
+.btns button:nth-child(3) {
+    background-color: #E7B3BA;
+    color: #6D4F55;
+}
+.btns button:nth-child(4) {
+    background-color: #B1DDDE;
+    color: #6D4F55;
+}
+.btns button:hover {
+    opacity: 0.7;
+}
+li {
+    width: 300px;
+    margin: 0 auto;
+}
+
+/* 入力ページ */
+.head_cont {
+    display: flex;
+    justify-content: center;
+    h3{
+        line-height: 25px;
+        margin-left: 10px;
+    }
+}
+.r_btn {
+    display: flex;
+    align-items: center;
+}
+.head_cont form{
+    background-color: #6D4F55;
+    color: #fff;
+    border-radius: 10px;
+    padding: 10px;
+    margin-left: auto;
+}
+input[type="radio"] {
+    -webkit-appearance: radio; /* Safari用 */
+    -moz-appearance: radio; /* Firefox用 */
+    appearance: auto; /* 標準のラジオボタンスタイルを適用 */
+    display: inline-block; /* デフォルト表示を維持 */
+}
+
+/* テキストエリアのCSS */
+
+
+.chose {
+    text-align: left;
+}
+.chose label {
+    font-family: "Noto Sans JP", sans-serif;
+    margin-right: auto;
+}
+.chose form ul {
+    text-align: left;
+    margin: 50px;
+}
+.chose button {
+    background-color: #6D4F55;
+    color: #fff;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 0 auto;
+    position: absolute;
+    top: -30px;
+    right: 30px;
+}
+
+.text-box{
+    margin: 0 auto;
+    background-image: url(images/入力フォーム.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 330px;
+    height: 242px;
+    margin-top: 20px;
+    textarea {
+        all: unset;
+        text-align: left;
+        margin: 0 20px;
+        margin-top: 60px;
+    }
+}
+
+
+/* ラジオボタンのCSS */
+
+
+.radio_content {
+    margin-top: 30px;
+    text-align: left;
+}
+.radio_content input {
+    margin-left: 25px;
+    height: 43px;
+    width: 30px;
+}
+.radio_content label {
+    display: block;
+    margin: 0 30px;
+    margin-bottom: 10px;
+    text-align: right;
+
+}
+.radio_content label:nth-child(1) {
+    background: url(images/white.png);
+    background-repeat: no-repeat;
+    accent-color: #EAE1E1;
+}
+.radio_content label:nth-child(2) {
+    background: url(images/yellow.png);
+    background-repeat: no-repeat;
+    accent-color: #FBE9AC;
+}
+.radio_content label:nth-child(3) {
+    background: url(images/greeen.png);
+    background-repeat: no-repeat;
+    accent-color: #D3DEA9;
+}
+.radio_content label:nth-child(4) {
+    background: url(images/red.png);
+    background-repeat: no-repeat;
+    accent-color: #E7B3BA;
+}
+.radio_content label:nth-child(5) {
+    background: url(images/blue.png);
+    background-repeat: no-repeat;
+    accent-color: #B1DDDE;
+}
+
+
+
+footer {
+    width: 390px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    color: #6D4F55;
+    background-color: #F4D077;
+}
+footer small {
+    margin: 0 auto;
+}

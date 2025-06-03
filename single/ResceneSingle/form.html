@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>感想</title>
+    <link rel="stylesheet" href="destyle.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
+    <style>
+        .content {
+            display: none;
+        }
+
+        #content1 {
+            background-color: blue;
+        }
+
+        #content2 {
+            background-color: red;
+        }
+
+        #content3 {
+            background-color: green;
+        }
+
+        li {
+            list-style: none;
+        }
+        header {
+            background-color: #ffffff;
+            border-bottom: 2px solid #E7B3BA;
+        }
+
+        main {
+            height: calc(100vh - 55px);
+            width: 390px;
+            background-image: url(images/background.png);
+            background-repeat: repeat;
+            background-size: 150px;
+            position: relative;
+        }
+        
+        button{
+            background-color: #6D4F55;
+            color: #fff;
+            padding: 10px;
+            border-radius: 10px;
+            position: absolute;
+            top: -65px;
+            right: 20px;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="head_cont">
+            <div class="r_btn">
+                <a href="index.html">
+                    <img src="images/左矢印.png">
+                </a>
+                <h3>名探偵コナン<br>１００万ドルの五稜星</h3>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="chose">
+            <div class="text-box">
+                <textarea type="text" id="textInput" placeholder="ここに入力"></textarea>
+            </div>
+            <div class="radio_content">
+                <label><input type="radio" name="category" value="メモ"></label>
+                <label><input type="radio" name="category" value="表情"></label>
+                <label><input type="radio" name="category" value="台詞"></label>
+                <label><input type="radio" name="category" value="シーン殴り書き"></label>
+                <label><input type="radio" name="category" value="キャラの背景"></label>
+            </div>
+            
+        </div>
+        <button id="saveButton">保存</button>
+    </main>
+    <script src="js/form.js"></script>
+</body>
+
+
+</html>
